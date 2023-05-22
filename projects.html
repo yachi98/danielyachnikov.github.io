@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="dylogo4.png" />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+    <title>Projects</title>
+  </head>
+  <body>
+    <section>
+        <header>
+          <img
+            class="logo"
+            id="home"
+            onclick="homeButton()"
+            href="index.html"
+            alt="dy logo"
+            src="dystudio3.png"
+        width="100px"
+          />
+          <nav class="mobile-nav">
+            <!-- <a href="index.html">Home</a> -->
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <button
+            class="btn-nav"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu"
+          >
+            <svg width="70" height="90" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </header>
+        <div class="cursor"></div>
+        
+        <div class="main-container">
+          <a href="about.html" class="back-button"><ion-icon class="back-icon" name="arrow-back-outline"></ion-icon></a>
+          <h1 class="projects-title">Projects</h1>
+       
+        <div class="projects-container">
+          <div class="project animate-on-scroll" >
+            <h2>University of Leeds Degree show</h2>
+            <p>Had the opportunity to design and build the Degree show website 
+              for the School of Design department in University of Leeds</p>
+              <h3>Technologies</h3>
+              <ion-icon class="html-logo" name="logo-html5"></ion-icon>
+              <ion-icon class="css-logo" name="logo-css3"></ion-icon>
+              <ion-icon class="js-logo" name="logo-javascript"></ion-icon>
+              <ion-icon class="wp-logo" name="logo-wordpress"></ion-icon>
+              <div class="btn-container">
+            <a class="button">View code</a>
+            <a href="https://uol-sod-degreeshow.co.uk/" target="_blank"  class="button">View site</a>
+          </div>
+          </div>
+          <div class="project animate-on-scroll">
+            <h2>Project 2</h2>
+            <p>Had the opportunity to design and build the Degree show website 
+              for the School of Design department in University of Leeds</p>
+              <h3>Technologies</h3>
+              <ion-icon class="html-logo" name="logo-html5"></ion-icon>
+              <ion-icon class="css-logo" name="logo-css3"></ion-icon>
+              <ion-icon class="js-logo" name="logo-javascript"></ion-icon>
+              <div class="btn-container">
+                <a class="button">View code</a>
+                <a href="https://uol-sod-degreeshow.co.uk/" target="_blank"  class="button">View site</a>
+              </div>
+              </div>
+          <div class="project animate-on-scroll">
+            <h2>Project 3</h2>
+            <p>Had the opportunity to design and build the Degree show website 
+              for the School of Design department in University of Leeds</p>
+              <h3>Technologies</h3>
+              <ion-icon class="html-logo" name="logo-html5"></ion-icon>
+              <ion-icon class="css-logo" name="logo-css3"></ion-icon>
+              <ion-icon class="js-logo" name="logo-javascript"></ion-icon>
+              <div class="btn-container">
+                <a class="button">View code</a>
+                <a href="https://uol-sod-degreeshow.co.uk/" target="_blank"  class="button">View site</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+      <footer class="footer">
+        <p class="footer_copyright">&copy; 2023 Daniel Yachnikov</p>
+    </footer>
+    </div>
+  
+        <style>
+              * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+  font-family: "Noirden";
+  src: url("Noirden\ Bold.otf") format("opentype");
+  font-weight: bold;
+
+  src: url("Noirden\ Reg.otf") format("opentype");
+  font-weight: normal;
+}
+
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+
+      html {
+       cursor: none;
+      }
+
+      .logo {
+        margin-left: 0;
+  margin-top: 0;
+  z-index: 11;
+  background: none;
+  cursor: pointer;
+      }
+      .logo:hover {
+        
+  cursor: none;
+      }
+
+      .btn-nav {
+        right: 10px;
+        z-index: 999;
+        position: absolute;
+        top: -5px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        background: none;
+        border: none;
+        top: -10px;
+        }
+
+        .btn-nav:hover {
+        cursor: none;
+        }
+
+        .cursor {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 50%;
+        z-index: 9999;
+        pointer-events: none;
+        }
+
+      .line {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 3;
+  transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 40 207;
+  stroke-width: 3;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 3;
+}
+.line3 {
+  stroke-dasharray: 40 207;
+  stroke-width: 3;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 3;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        
+        
+      }
+
+
+      .btn-mobile-nav {
+        border: none;
+        background: none;
+
+        cursor: pointer;
+        width: 70px;
+        position: relative;
+        float: right;
+        left: -5px;
+        margin-top: -45px;
+        top: 10px;
+        /* display: none; */
+        
+
+        z-index: 98;
+      }
+
+      .mobile-nav {
+  display: block;
+  position: fixed;
+  /* top: 0; */
+  bottom: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  /* background-color: rgba(2, 0, 19, 0.9); */
+  padding-top: 120px;
+  z-index: 97;
+  transition: 0.4s all ease-in-out;
+}
+
+.mobile-nav.is-active {
+  bottom: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 500px;
+  /* margin: 0 auto 20px; */
+  margin-left: 50px;
+  text-decoration: none;
+  font-size: 110px;
+  /* color: #ffffff; */
+  text-transform: uppercase;
+  font-family: 'Noirden', Helvetica;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-weight: 300;
+  line-height: 0.9;
+}
+
+.mobile-nav a:hover {
+  /* box-shadow: inset 500px 0 0 0 rgb(255, 255, 255); */
+  width: 100%;
+  color: rgb(255, 255, 255);
+  -webkit-text-fill-color: white;
+  cursor: none;
+
+  
+}
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(300px);
+      transition: all 0.3s ease-out;
+      transition-delay: 0.1s;
+      }
+
+      .animate {
+      opacity: 1;
+      transform: translateY(0);
+      }
+
+      .back-icon {
+        position: relative;
+        color: white;
+        /* display: none; */
+        margin-left: 20px;
+      }
+
+      .back-button a {
+        margin-left: 20px;
+        
+      }
+
+      .back-button {
+        font-size: 35px;
+        position: absolute;
+        /* color: rgb(255, 255, 255); */
+        margin-left: 25px;;
+        margin-bottom: 20px;
+        transition: 0.3s all ease-in-out;
+        text-decoration: none;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-color: #ffffff;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: #ffffff;
+        -webkit-text-stroke-width: 1px;
+        background: none;
+      }
+
+      .back-button:hover {
+        -webkit-text-fill-color: white;
+
+        
+        
+      }
+
+      .projects-title {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 120px;
+        font-weight: 300;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: #ffffff;
+        -webkit-text-stroke-width: 1px;
+        text-transform: uppercase;
+        font-family: 'Noirden', Helvetica;
+    }
+
+    .projects-container {
+      display: grid;
+      place-items: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+    }
+
+    .project {
+      /* border: 2px solid rgb(26, 26, 26);  */
+      width: 90%;
+      height: 420px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+      /* background-color: rgb(11, 11, 11); */
+      cursor: pointer;
+      /* background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+
+border: 1px solid rgba(255, 255, 255, 0.3); */
+background-color: rgba(28, 28, 28, 0.5);  
+ backdrop-filter: blur(5px);
+ 
+    }
+
+    .project:hover {
+      border: 1px solid white;
+      cursor: none;
+    }
+
+    .project:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+    .project:nth-child(3) {
+      transition-delay: 0.3s;
+    }
+
+    h2 {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      margin-left: 40px;
+      margin-top: 50px;
+      font-weight: 300;
+      font-family: 'Noirden', Helvetica;
+      }
+
+      .btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: -60px;
+      }
+
+    .button {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      padding: 15px 30px;
+      background: none;
+      border: 1px solid rgb(196, 196, 196);
+      color:rgb(196, 196, 196);
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out;
+      margin: 0 auto 20px;
+      width: 140px;
+      margin-top: 50px;
+      position: relative;
+      text-decoration: none;
+      font-family: 'Noirden', Helvetica;
+      
+      
+      font-size: 15px;
+      }
+
+    
+
+     .button:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        cursor: none;
+      }
+
+      p {
+        color:rgb(255, 255, 255);
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: 17px;
+        text-align: left;
+        /* width: 70%; */
+        font-family: 'Noirden', Helvetica;
+        font-weight: 300;
+        
+      }
+
+      h3 {
+        color:rgb(255, 255, 255);
+        margin-left: 40px;
+        margin-top: 50px;
+        font-weight: 300;
+        font-family: 'Noirden', Helvetica;
+        font-size: 20px;
+        
+      }
+
+      
+
+      .html-logo {
+        color:rgb(255, 255, 255);
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+        
+      }
+      .css-logo {
+        color:rgb(255, 255, 255);
+        width: 30px;
+        height: 30px;
+      }
+      .js-logo {
+        color:rgb(255, 255, 255);
+        width: 30px;
+        height: 30px;
+      }
+      .wp-logo {
+        color:rgb(255, 255, 255);
+        width: 30px;
+        height: 30px;
+      }
+
+      .footer_copyright {
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      font-weight: 100;
+      margin-bottom: 80px;
+      place-content: center;
+      position: relative;
+      font-family: 'Noirden', Helvetica;
+      width: 100%;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      
+
+     
+
+      /* media queries */
+      @media (max-width: 914px) {
+        .btn-nav {
+          display: block;
+          cursor: pointer;
+          float: right;
+          position: fixed;
+        }
+
+        .mobile-nav a {
+         font-size: 90px;
+        }
+        .projects-title {
+          font-size: 90px;
+        }
+
+        .cursor {
+    display: none;
+  }
+
+
+        .projects-container {
+         grid-template-columns: 1fr;
+      
+        }
+      }
+
+      @media (max-width: 786px) {
+        .btn-nav {
+          display: block;
+          cursor: pointer;
+          float: right;
+        }
+
+        .mobile-nav a {
+         font-size: 80px;
+        }
+        .projects-title {
+          font-size: 80px;
+        }
+
+      }
+
+      @media (max-width: 660px) {
+          .btn-nav {
+            display: block;
+            cursor: pointer;
+            float: right;
+          }
+
+          .mobile-nav a {
+          font-size: 70px;
+          margin-left: 20px;
+        }
+
+          .projects-title {
+          font-size: 70px;
+        }
+
+        }
+
+      @media (max-width: 560px) {
+        .mobile-nav a {
+          font-size: 70px;
+          margin-left: 20px;
+        }
+
+        .projects-title {
+          font-size: 70px;
+        }
+
+
+      }
+
+      @media (max-width: 480px) {
+        .mobile-nav a {
+          font-size: 60px;
+          margin-left: 20px;
+        }
+
+        .projects-title {
+          font-size: 60px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .mobile-nav a {
+          font-size: 50px;
+          margin-left: 20px;
+        }
+
+        .back-icon {
+          margin-top: 60px;
+          display: none;
+         }
+
+         h2 {
+          font-size: 17px;
+        }
+
+        p {
+          font-size: 15px;
+          
+        }
+
+        h3 {
+          font-size: 17px;
+        }
+
+      }
+ 
+
+
+
+      @media (max-width: 375px) {
+        .btn-nav {
+          display: block;
+          cursor: pointer;
+          float: right;
+        }
+        .mobile-nav a {
+         font-size: 50px;
+         
+        }
+
+      @media (max-width: 360px) {
+        .btn-nav {
+          display: block;
+          cursor: pointer;
+          float: right;
+        }
+        .mobile-nav a {
+         font-size: 50px;
+         
+        }
+
+        .projects-title {
+          font-size: 50px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .project {
+          height: 480px;
+        }
+
+        .back-button {
+          font-size: 15px;
+          margin-top: 50px;
+        }
+
+        .button {
+          padding: 10px 20px;
+          border-radius: 15px;
+          width: 100px;
+        }
+
+        
+
+        .btn-container a {
+          font-size: 10px;
+        }
+
+        
+      }
+    }
+
+      
+
+    
+
+        </style>
+        <script>
+
+let mouseCursor = document.querySelector(".cursor");
+let navLinks = document.querySelector(".nav_links li");
+
+window.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+            const navBtn = document.querySelector(".btn-nav");
+            const mobileMenu = document.querySelector(".mobile-nav");
+
+            navBtn.addEventListener("click", () => {
+            navBtn.classList.toggle("is-active");
+            mobileMenu.classList.toggle("is-active");
+            });
+
+            function homeButton() {
+            location.href = "index.html";
+            }
+
+            const animation_elements = document.querySelectorAll(".animate-on-scroll");
+      const observer = new IntersectionObserver(
+      (entries) => {
+      entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+      } else {
+        entry.target.classList.remove("animate");
+      }
+    });
+    },
+    {
+    threshold: 0.5,
+  }
+);
+
+for (let i = 0; i < animation_elements.length; i++) {
+  const el = animation_elements[i];
+  observer.observe(el);
+}
+        </script>
+  </body>
+</html>
